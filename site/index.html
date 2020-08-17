@@ -1,0 +1,60 @@
+<html>
+<head>
+    <!--
+    This is the library that provides websocket streaming pub/sub
+    The dev serverver is serving the html and javascript, but it also provides updating fx data on /fx/prices.
+     -->
+    <script src="stomp.js"></script>
+    <script src="sparkline.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+</head>
+<body>
+
+<!-- This is a description of what you should do for this task.  You can remove it for your answer -->
+<section class="content">
+    <h1>Updating Table</h1>
+
+    <!-- 
+        JQUERY IMPLEMENTATION
+    <table id='bidding-table'>
+        <tr>
+            <th>Name</th>
+            <th>Best Bid</th>
+            <th>Best Ask</th>
+            <th>Open Bid</th>
+            <th>Open Ask</th>
+            <th>Last Change Ask</th>
+            <th aria-sort='descending'>Last Change Bid</th>
+        </tr>
+    </table>
+-->
+    <div id='biddingTableDiv'></div>
+    <br />
+    <h2>SPARKLINE :</h2>
+    <div id="sparklineDiv"></div>
+
+        <!--
+            NOTE:
+            1. I wasn't sure if React Js was supposed to be used. Otherwise i would have tried with react-stomp module. 
+            2. I have kept the jQuery implementation as Commented section, as i first implemented it using jQuery but wasn't 
+               sure if jQuery is aso not allowed,so used JS instead.
+            3. I had some concerns regarding sparkline as i didnt get what exactly was expected. Hope my implementation will
+               suffice. The sparkline will get updated every 30 secs based on lastest 5 midprice values.
+            4. I have kept basic css as it is to keep it simple. Definitely, the table can be enhanced to look better.
+            5. As i am using Stomp for the very first time, i think there can be better way of handling and logging errors.
+
+            Name: Silvia Albuquerque
+            Email: silviaalbuquerque0@gmail.com
+            Mob: 9604850753/7020917426
+
+        -->
+
+</section>
+
+<!-- Code you write in index.js and anything it depends on will be bundled into bundle.js and
+     is included here -->
+<script src="bundle.js"></script>
+
+</body>
+</html>
